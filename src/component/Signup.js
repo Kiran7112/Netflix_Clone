@@ -15,9 +15,18 @@ const Signup = () => {
   const [popup, setPopup] = useState({ visible: false, type: '', message: '' });
   const Navigate = useNavigate();
 
+  // Password validation schema
   const schema = yup.object().shape({
-    email: yup.string().email().required("Invalid email"),
-    password: yup.string().matches(/\d/, "Password must contain numbers").min(4).max(20).required("Weak Password"),
+    email: yup.string().email("Invalid email format").required("Email is required"),
+    password: yup
+      .string()
+      .min(8, "Password must be at least 8 characters")
+      .max(20, "Password cannot exceed 20 characters")
+      .matches(/\d/, "Password must contain at least one number")
+      .matches(/[A-Z]/, "Password must contain at least one uppercase letter")
+      .matches(/[a-z]/, "Password must contain at least one lowercase letter")
+      .matches(/[!@#$%^&*]/, "Password must contain at least one special character (!@#$%^&*)")
+      .required("Password is required"),
   });
 
   const { register, handleSubmit, formState: { errors } } = useForm({
@@ -76,12 +85,12 @@ const Signup = () => {
             <div className="form-floating">
               <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" {...register("email")} onChange={(e) => setEmail(e.target.value)} />
               <label htmlFor="floatingInput">Email address</label>
-              {errors && <p className='text-danger'>{errors.email?.message}</p>}
+              {errors.email && <p className='text-danger'>{errors.email.message}</p>}
             </div>
             <div className="form-floating">
               <input type="password" className="form-control" id="floatingPassword" placeholder="Password" {...register("password")} onChange={(e) => setPwd(e.target.value)} />
               <label htmlFor="floatingPassword">Password</label>
-              {errors && <p className='text-danger'>{errors.password?.message}</p>}
+              {errors.password && <p className='text-danger'>{errors.password.message}</p>}
             </div>
 
             <div>
