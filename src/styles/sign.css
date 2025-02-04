@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  color: white;
+
+}
+h6 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main-con {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/public/background.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black !important;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+header {
+  position: absolute;
+  top: 50px; /* Adjust this value as needed */
+  left: 50px; /* Adjust this value as needed */
+  z-index: 3;
+}
+
+header img {
+  width: 200px;
+}
+
+.sign-form {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  width: 400px !important;
+  height: 600px !important;
+  background: rgba(0, 0, 0, 0.6)!important;
+  z-index: 3;
+  color: black;
+}
+
+.inputs {
+  padding: 30px;
+ 
+  
+}
+
+.form-floating input {
+  width: 100% !important;
+  padding: 10px ;
+  margin-bottom: 15px;
+  color:black !important; 
+  outline: 0;
+ 
+}
+
+.form-floating label{
+  color: black;
+}
+
+.sign-btn {
+  width: 100%;
+  padding: 13px;
+  background-color: #D81F26;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.google-signup-btn{
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.google-signup-icon{
+  font-size: 30px;
+  padding-right: 5px;
+}
+.form-check {
+  margin-top: 20px;
+  margin-left: 30px;
+  color: white;
+}
+
+.captcha {
+  margin-top: 10px;
+  margin-left: 30px;
+  color: white;
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.link:hover{
+  text-decoration: underline;
+  color: white;
+}
+.text-captcha{
+  font-size: 13px;
+}
+
+
+.footer{
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  background-color:black;
+  backdrop-filter: blur(100px);
+  z-index: -1;
+  color: white;
+  padding-top:30px ;
+}
+.footer p{
+ margin-left: 120px;
+}
+.foot-links{
+  display: flex;
+  justify-content: space-around;
+}
+.links li{
+  list-style: none;
+  margin:10px;
+}
+.links li a{
+  color: white;
+}
+.forgot-pwd{
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+.forgot-pwd:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .login-net-logo{
+    width:150px;
+    margin-top: -30px;
+    margin-left: -40px;
+  }
+  .sign-form{
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 300px !important;
+    height: 600px !important;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    color: black;
+  }
+
+  input:nth-child(2){
+  height: 30px !important;
+  width: 250px !important;
+  text-align: center !important;
+  }
+  button{
+    height: 50px !important;
+  }
+}

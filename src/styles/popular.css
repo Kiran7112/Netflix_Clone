@@ -1,0 +1,96 @@
+.popular-text {
+  font-size: 40px;
+  padding-inline: 50px;
+  padding-top: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pop-con {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+  overflow-x: auto; 
+  overflow-y: hidden;
+}
+
+.pop-box-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.pop-box-cont {
+  width: auto;
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+}
+
+.pop_box {
+  padding-inline: 120px;
+  padding-block: 90px;
+  position: relative;
+  width: 200px;
+  height: 350px;
+  margin: 15px; 
+  overflow: hidden; 
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 3px whitesmoke;
+}
+.pop_box:hover {
+  margin-left:50px;
+  position: relative;
+  transition: 2s;
+  z-index: 1;
+}
+.play-video{
+  position: absolute;
+ background-color: rgba(0,0,0,0.9);
+ width: 100%;
+ display: none;
+ color:whitesmoke;
+padding-block:5px;
+  content: "";
+  bottom: 0;
+  left:0;
+  z-index: 1;
+}
+.play-icons:hover{
+  color: red;
+}
+
+.pop_box:hover .play-video{
+  display: block;
+}
+.youtube-video {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.youtube-video div {
+  width: 80%; 
+}
+@media (max-width:768px){
+  .popular-text {
+    font-size: 1.3rem;
+  }
+  .pop-box-cont {
+    gap: 10px; 
+    padding: 10px;
+  }
+  .pop_box {
+    padding-inline: 120px;
+    padding-block: 90px;
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 15px; 
+    overflow: hidden; 
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 3px whitesmoke;
+  }
+}

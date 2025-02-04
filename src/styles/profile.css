@@ -1,0 +1,174 @@
+
+*{
+box-sizing: border-box;
+
+
+}
+.profile-main-cont{
+   
+   width: 100%;
+   max-width: 100%;
+   height: 130vh;
+   max-height: 130vh;
+ position: relative;
+  color: white;
+}
+
+.profile{
+   margin: 20px auto;  
+    width: 18vw;
+    height: 45vh; 
+    position: relative;
+}
+
+
+.profile img{
+    width: 300px;
+    height: 250px;
+    border-radius:50% ;
+    background-size: cover;
+    object-fit: cover;
+    border: 1px solid white;
+    margin-top: 20px;
+    border:5px double white;
+  
+}
+.upload {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 40px;
+  
+}
+.upload label{
+  margin: 30px auto;
+text-align: center ;
+background-color:  #DC3545;
+color: white !important;
+padding-inline: 30px;
+padding-block: 5px;
+box-shadow: 0 0 10px black;
+
+}
+#image{
+    display: none;
+}
+.main-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  margin-left: 50px;
+}
+
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.user-input-box label {
+  width: 95%;
+  color:black ;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input-box input {
+  height: 40px;
+  width: calc(100% - 80px); 
+  outline: none;
+  border: 1px solid black;
+  padding: 0 10px;
+  margin-right: 10px; 
+  box-shadow: 0 0 3px black;
+  text-align: left !important;
+}
+
+
+.user-input-box button {
+  height: 40px;
+  width: 100px;
+  background-color: #DC3545; 
+  color:white; 
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+.userName{
+  font-size: 1rem;
+}
+.update{
+  display: none;
+}
+.nav-bar-con{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:768px) {
+  .user-input-box button {
+    height: 30px !important;
+    width: 60px;
+    font-size: 10px;
+    
+  }
+ .user-input-box input{
+  font-size: 10px;
+  height: 30px !important;
+  width:250px !important;
+  outline: none;
+  border: 1px solid black;
+
+  padding: 0 10px;
+  margin-right: 10px; 
+  box-shadow: 0 0 3px black;
+  text-align: left !important;
+ }
+ .user-input-box label{
+  font-size: 1rem;
+ }
+ .main-user-info {
+  
+  padding: 20px 0;
+  margin-left: 20px;
+}
+.upload {
+ 
+  margin-top: 0px !important;
+  
+}
+.upload label{
+  margin: 0px auto !important;
+padding-inline: 10px;
+padding-block: 2px;
+font-size: 15px;
+
+}
+
+
+.profile{
+  margin: 20px auto;  
+   width: 150px;
+   height: 30vh; 
+   position: relative;
+}
+.profile img{
+   width: 150px;
+   height: 130px;
+   border-radius:50% ;
+   margin-top: 35px;
+}
+.userName{
+  font-size: 1rem !important;
+}
+.submit-update{
+  width: 80px !important;
+  height: 2.5rem !important;
+
+}
+}
