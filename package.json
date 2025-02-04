@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "assert": "^2.1.0",
     "axios": "^1.6.7",
+    "caniuse-lite": "^1.0.30001697",
     "colorthief": "^2.4.0",
     "firebase": "^10.8.1",
     "movie-trailer": "^3.2.2",
@@ -59,6 +60,7 @@
     "test": "test"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   },
   "author": "",
