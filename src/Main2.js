@@ -42,9 +42,9 @@ function Main2() {
        <War/>
        <Western/>
       <div className='next-page'>
-      <a href="main"><button type="button" >1</button></a>
-       <a href="main2"><button type="button" >2</button></a>
-       <a href="main3"><button type="button" >3</button></a>
+             <Link to="/main"><button type="button">1</button></Link>
+             <Link to="/main2"><button type="button">2</button></Link>
+             <Link to="/main3"><button type="button">3</button></Link>
       </div>
       <MainFooter/>
      
