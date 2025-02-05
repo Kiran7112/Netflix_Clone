@@ -88,21 +88,24 @@ useEffect(() => {
  </a>
 
  <ul class="dropdown-menu">
-   <li><a class="dropdown-item" href="/main/#fantasy">Fantasy</a></li>
-   <li><a class="dropdown-item" href="/main/#romantic">Romantic</a></li>
-   <li><a class="dropdown-item" href="/main#action">Action </a></li>
-   <li><a class="dropdown-item" href="main/#comedy">Comedy </a></li>
-   <li><a class="dropdown-item" href="/main/#science">Sc-Fi</a></li> 
-   <li><a class="dropdown-item" href="/main2/#crime">Crime </a></li>
-    <li><a class="dropdown-item" href="/main2/#thriller">Thriller </a></li>
-    <li><a class="dropdown-item" href="/main2/#drama">Drama </a></li>
-    <li><a class="dropdown-item" href="/main2/#adv">Adventure</a></li>
-    <li><a class="dropdown-item" href="/main2/#mystery">Mystery </a></li>
-    <li><a class="dropdown-item" href="/main2/#horror">Horror </a></li>
-    <li><a class="dropdown-item" href="/main2/#history">History </a></li>
-    <li><a class="dropdown-item" href="/main2/#music">Music</a></li>
-    <li><a class="dropdown-item" href="/main2/#war">War </a></li>
-    <li><a class="dropdown-item" href="/main2/#western">Western </a></li>
+  
+
+<Link className="dropdown-item" to="/main/#fantasy">Fantasy</Link>
+<Link className="dropdown-item" to="/main/#romantic">Romantic</Link>
+<Link className="dropdown-item" to="/main#action">Action</Link>
+<Link className="dropdown-item" to="main/#comedy">Comedy</Link>
+<Link className="dropdown-item" to="/main/#science">Sc-Fi</Link>
+<Link className="dropdown-item" to="/main2/#crime">Crime</Link>
+<Link className="dropdown-item" to="/main2/#thriller">Thriller</Link>
+<Link className="dropdown-item" to="/main2/#drama">Drama</Link>
+<Link className="dropdown-item" to="/main2/#adv">Adventure</Link>
+<Link className="dropdown-item" to="/main2/#mystery">Mystery</Link>
+<Link className="dropdown-item" to="/main2/#horror">Horror</Link>
+<Link className="dropdown-item" to="/main2/#history">History</Link>
+<Link className="dropdown-item" to="/main2/#music">Music</Link>
+<Link className="dropdown-item" to="/main2/#war">War</Link>
+<Link className="dropdown-item" to="/main2/#western">Western</Link>
+
  </ul>
 </div>
        </div>
