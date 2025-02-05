@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom'; // Import Link from react-router-dom
-import Herocomponet from './component/herocomponet';
+import Herocomponent from './component/Herocomponent';
 import Popular from './component/Popular';
 import Toprated from './component/Toprated';
 import Thriller from './component/Thriller';
@@ -40,7 +40,7 @@ function Main() {
     <section className='main-container'>
       {load && <Logo_Ani />}
       <Nav />
-      <Herocomponet />
+      <Herocomponent/>
       <Popular />
       <Upcoming />
       <Toprated />

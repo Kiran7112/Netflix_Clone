@@ -1,7 +1,7 @@
 import React from 'react';
 import "./styles/popular.css";
 import { Link,Outlet } from 'react-router-dom';
-import Herocomponent from './component/herocomponet';
+import Herocomponent from './component/Herocomponent';
 import "./styles/hero.css";
 import MainFooter from './component/MainFooter';
 import Action_Adv from './Tv/Action&Adv';

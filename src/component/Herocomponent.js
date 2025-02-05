@@ -18,7 +18,7 @@ function Herocomponent() {
   const api = "cf9f8c36866c23046aad7733bb2641eb";   
   
   useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3//discover/tv?api_key=${api}&with_networks=213`)
+    axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=${api}&with_networks=213`)
       .then((response) => {
         const movies = response.data.results;
         const randomMovie = movies[Math.floor(Math.random() * movies.length)];

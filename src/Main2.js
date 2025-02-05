@@ -2,7 +2,7 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import "./styles/popular.css";
 import { Link,Outlet } from 'react-router-dom';
-import Herocomponent from './component/herocomponet';
+import Herocomponent from './component/Herocomponent';
 import "./styles/hero.css";
 import Thriller from './component/Thriller';
 import Crime from './component/Crime';
