@@ -22,7 +22,7 @@ A fully functional Netflix clone built using **React.js**, **Firebase Authentica
 
 ## 📌 Live Demo
 
-🔗 [Netflix Clone - Live](#) *(https://clone7112.netlify.app/)*
+🔗 [Netflix Clone - Live](#) *(https://mkr-project-5.netlify.app/)*
 
 ## 🏗️ Installation & Setup
 
